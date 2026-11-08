@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "0b3a6f7d07ae358c8d0e1dd686cd708cea742075f3122643f04eef8cc5706e2e",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://dev.alterestate.com/"
+  ],
+  "id": "alterestate-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "AlterEstate MCP setup and connection checker",
+  "description": "Generate AlterEstate MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "alterestate",
+  "appName": "AlterEstate",
+  "providerDocs": "https://dev.alterestate.com/",
+  "providerWebsite": "https://alterestate.com/",
+  "authentication": {
+    "type": "custom_headers",
+    "requiredCredentialFields": [
+      "provider_header_credentials"
+    ],
+    "requiredHeaderNames": [
+      "aetoken",
+      "Authorization"
+    ],
+    "helpUrl": "https://dev.alterestate.com/leads",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-alterestate-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
