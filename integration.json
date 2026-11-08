@@ -1,40 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "0b3a6f7d07ae358c8d0e1dd686cd708cea742075f3122643f04eef8cc5706e2e",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://dev.alterestate.com/"
-  ],
   "id": "alterestate-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AlterEstate MCP setup and connection checker",
-  "description": "Generate AlterEstate MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AlterEstate for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-alterestate-mcp",
+  "sourceRevision": "a0bcdb142e65e0bdd7c635b30ba12251a614b609d53077409a08342a527652fe",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://dev.alterestate.com/"
+  ],
+  "utility": {
+    "problem": "Prepare AlterEstate and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "alterestate",
   "appName": "AlterEstate",
-  "providerDocs": "https://dev.alterestate.com/",
-  "providerWebsite": "https://alterestate.com/",
-  "authentication": {
-    "type": "custom_headers",
-    "requiredCredentialFields": [
-      "provider_header_credentials"
-    ],
-    "requiredHeaderNames": [
-      "aetoken",
-      "Authorization"
-    ],
-    "helpUrl": "https://dev.alterestate.com/leads",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-alterestate-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

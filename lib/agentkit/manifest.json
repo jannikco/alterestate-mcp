@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-alterestate",
+      "description": "Connect AI agents to AlterEstate using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-alterestate/SKILL.md": "09ca364c1194d1db720da145f83c0844834a08cc97a4403c23daab6381dc6cfe"
+  }
+}
